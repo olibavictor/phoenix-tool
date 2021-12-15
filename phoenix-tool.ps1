@@ -1,6 +1,6 @@
-$InstallPath = "C:\Files\Toolback"
-$LocalPath = "C:\Files\Toolback\Origem"
-$Destino = "C:\Files\Toolback\Destino"
+$InstallPath = "C:\"
+$LocalPath = "C:\"
+$Destino = "C:\"
 $LogPath = $InstallPath + "\phoenixtool" + (Get-Date -Format "ddMMyyyyHHmm") + ".log"
 $LogFile = $LogPath
 $AllFiles = "*.bak"

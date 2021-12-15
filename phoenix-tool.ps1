@@ -123,7 +123,7 @@ function Invoke-SendEmail {
 
 #Envia notificação para slack informando conclusão do backup
 function Invoke-SendSlack {
-        $webhook = "https://hooks.slack.com/services/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"
+        $webhook = "webhook"
         $hostname = [System.Net.Dns]::GetHostName()
 
             $report1 = (Get-Content $LogFile -Tail 9)[0]

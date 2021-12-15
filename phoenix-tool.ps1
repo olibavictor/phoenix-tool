@@ -114,7 +114,7 @@ function Invoke-SendEmail {
         $Body = "$report1`n$report2`n$report3`n$report4`n$report5`n$report6`n$report7`n$report8`n$report9"
         $SMTPServer = "smtp.gmail.com"
         $SMTPPort = "587"
-        $PassBase64 = [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String("e2FkaXR1c11HbWFpbHsxMkFETX0="))
+        $PassBase64 = [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String("Base64"))
         $secpasswd = ConvertTo-SecureString "$PassBase64" -AsPlainText -Force
         $mycreds = New-Object System.Management.Automation.PSCredential($From, $secpasswd)
         Send-MailMessage -From $From -to $To -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential $mycreds
